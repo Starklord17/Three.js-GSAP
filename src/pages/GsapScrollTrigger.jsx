@@ -83,7 +83,7 @@ const GsapScrollTrigger = () => {
       <div className="mt-20 w-full h-screen" ref={scrollRef}>
         <div
           id="scroll-pink"
-          className="scroll-box w-20 h-20 rounded-lg bg-pink-500"
+          className="scroll-box w-20 h-20 rounded-lg bg-yellow-500"
         />
         <div
           id="scroll-orange"
