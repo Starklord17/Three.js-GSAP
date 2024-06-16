@@ -164,7 +164,7 @@ const VideoCarousel = () => {
   return (
     <>
     <section className="flex items-center">
-      {hightlightsSlides.map((list, i) => ( // parentesis para "Immediate Return" o "Implicit Return".
+      {hightlightsSlides.map((list, i) => ( // parentheses for 'Immediate Return' or 'Implicit Return'.
         <article key={list.id} id="slider" className="sm:pr-20 pr-10">
           <div className="video-carousel_container">
             <figure className="w-full h-full flex-center rounded-3xl overflow-hidden bg-black">
