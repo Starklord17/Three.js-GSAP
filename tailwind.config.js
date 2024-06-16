@@ -16,4 +16,9 @@ export default {
     },
   },
   plugins: [],
+  future: {
+    applyComplexDefaults: true,
+  },
 };
+
+// La configuración applyComplexDefaults: true indica a Tailwind CSS que permita el uso de la regla @apply y evite emitir warnings innecesarios.
