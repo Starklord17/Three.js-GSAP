@@ -10,6 +10,20 @@ import React, { useEffect, useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 import * as THREE from 'three';
 
+/**
+ * 3D iPhone Model Component
+ *
+ * This component renders a detailed 3D model of an iPhone, loaded from a GLTF file. 
+ * It allows for customization of the model's color and texture.
+ *
+ * @component
+ * @param {Object} props - Component properties.
+ * @param {Object} props.item - Item data containing information for the model.
+ * @param {string} props.item.img - Path to the texture image for the iPhone screen.
+ * @param {string[]} props.item.color - An array of color values (e.g., ["#FF0000"]) to be applied to specific parts of the model.
+ * 
+ * @returns {JSX.Element} The rendered 3D model of the iPhone within a Three.js group.
+ */
 function Model(props) {
   const { nodes, materials } = useGLTF("/models/scene.glb");
 
