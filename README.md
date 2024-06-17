@@ -11,4 +11,6 @@ Currently, two official plugins are available:
 
 ## Resources
 
+- [Three.js](https://threejs.org/)
+- [GSAP](https://gsap.com/)
 - [Turns GLTFs into JSX components](https://github.com/pmndrs/gltfjsx)
