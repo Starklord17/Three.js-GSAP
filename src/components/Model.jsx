@@ -11,6 +11,20 @@ import { yellowImg } from "../utils";
 import { models, sizes } from "../constants";
 import { animateWithGsapTimeline } from "../utils/animations";
 
+/**
+ * 3D iPhone Model Display Component
+ *
+ * This component renders an interactive 3D model of an iPhone within a product showcase. 
+ * It features:
+ *   - Two views of the model (small and large) that transition using GSAP animations.
+ *   - User-selectable color options for the model.
+ *   - User-selectable size options for the model view.
+ *   - Camera controls for rotating and viewing the model in 3D.
+ *   - A title dynamically updated based on the selected model.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered product showcase with the 3D model, controls, and information.
+ */
 const Model = () => {
   const [size, setSize] = useState('small');
   const [model, setModel] = useState({
