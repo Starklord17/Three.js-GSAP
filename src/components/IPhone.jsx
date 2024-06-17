@@ -6,15 +6,16 @@ Source: https://sketchfab.com/3d-models/apple-iphone-15-pro-max-black-df17520841
 Title: Apple iPhone 15 Pro Max Black
 */
 
+import React, { useEffect, useRef } from "react";
+import { useGLTF, useTexture } from "@react-three/drei";
 import * as THREE from 'three';
-import React, { useEffect, useRef } from 'react';
-import { useGLTF, useTexture } from '@react-three/drei';
 
 function Model(props) {
   const { nodes, materials } = useGLTF("/models/scene.glb");
 
   const texture = useTexture(props.item.img);
 
+    // Update the colors of certain materials in a 3D model based on the `props.item.color` value.
     useEffect(() => {
       Object.entries(materials).map((material) => {
         // these are the material names that can't be changed color
@@ -30,7 +31,7 @@ function Model(props) {
         material[1].needsUpdate = true;
       });
     }, [materials, props.item]);
-
+  
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -144,7 +145,9 @@ function Model(props) {
         geometry={nodes.xXDHkMplTIDAXLN.geometry}
         material={materials.pIJKfZsazmcpEiU}
         scale={0.01}
-      />
+      >
+        <meshStandardMaterial roughness={1} map={texture} />
+      </mesh>
       <mesh
         castShadow
         receiveShadow
@@ -251,9 +254,8 @@ function Model(props) {
         scale={0.01}
       />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/models/scene.glb')
-
+useGLTF.preload("/models/scene.glb");
 export default Model;
