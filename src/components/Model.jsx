@@ -64,7 +64,7 @@ const Model = () => {
   }, [size])
 
   useGSAP(() => {
-    gsap.to('#heading', { y: 0, opacity: 1 })
+    gsap.to('#heading', { y: 0, opacity: 1, duration: 1.5 })
   }, []);
 
   return (
