@@ -3,6 +3,7 @@ import Highlights from "./components/Highlights"
 import Navbar from "./components/Navbar"
 import Model from "./components/Model"
 import Features from "./components/Features"
+import HowitWorks from "./components/HowitWorks"
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Highlights />
       <Model />
       <Features />
+      <HowitWorks />
     </main>
   )
 }
