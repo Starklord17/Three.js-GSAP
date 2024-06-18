@@ -1,9 +1,12 @@
 import React from 'react'
-import { chipImg, frameImg, frameVideo } from '../utils'
+import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { chipImg, frameImg, frameVideo } from '../utils'
 
 const HowitWorks = () => {
+  const videoRef = useRef();
+
   useGSAP(() => {
     gsap.from('#chip', {
       scrollTrigger: {
@@ -43,7 +46,14 @@ const HowitWorks = () => {
               <img src={frameImg} alt="frame" className='bg-transparent relative z-10' />
             </div>
             <div className='hiw-video'>
-                <video>
+                <video 
+                  className='pointer-events-none' 
+                  playsInline 
+                  preload="none" 
+                  muted 
+                  autoPlay 
+                  ref={videoRef}
+                >
                   <source src={frameVideo} type="video/mp4" />
                 </video>
               </div>
