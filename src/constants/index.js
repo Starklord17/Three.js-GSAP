@@ -9,7 +9,12 @@ import {
   yellowImg,
 } from "../utils";
 
-export const navLists = ["Store", "Mac", "iPhone", "Support"];
+export const navLists = [
+  { text: "Store", url: "https://github.com/Starklord17/Three.js-GSAP" },
+  { text: "Mac", url: "https://github.com/Starklord17/Three.js-GSAP" },
+  { text: "iPhone", url: "https://github.com/Starklord17/Three.js-GSAP" },
+  { text: "Support", url: "https://github.com/Starklord17/Three.js-GSAP" },
+];
 
 export const hightlightsSlides = [
   {
