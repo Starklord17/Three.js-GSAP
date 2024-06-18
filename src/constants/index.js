@@ -79,9 +79,9 @@ export const sizes = [
 ];
 
 export const footerLinks = [
-  "Privacy Policy",
-  "Terms of Use",
-  "Sales Policy",
-  "Legal",
-  "Site Map",
+  { text: "Privacy Policy", url: "https://github.com/Starklord17/Three.js-GSAP" },
+  { text: "Terms of Use", url: "https://github.com/Starklord17/Three.js-GSAP" },
+  { text: "Sales Policy", url: "https://github.com/Starklord17/Three.js-GSAP" },
+  { text: "Legal", url: "https://github.com/Starklord17/Three.js-GSAP" },
+  { text: "Site Map", url: "https://github.com/Starklord17/Three.js-GSAP" },
 ];
