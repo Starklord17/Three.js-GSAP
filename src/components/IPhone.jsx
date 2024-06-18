@@ -157,7 +157,7 @@ function Model(props) {
         castShadow
         receiveShadow
         geometry={nodes.xXDHkMplTIDAXLN.geometry}
-        material={materials.pIJKfZsazmcpEiU}
+        material={materials.pIJKfZsazmcpEiU} // Screen
         scale={0.01}
       >
         <meshStandardMaterial roughness={1} map={texture} />
